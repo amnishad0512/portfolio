@@ -48,7 +48,7 @@ const Footer = () => {
         
         <div className="border-t border-border mt-6 pt-6 flex flex-col md:flex-row justify-between items-center">
           <div className="text-muted-foreground text-sm mb-4 md:mb-0">
-            © {currentYear} Manoj Nishad. All rights reserved.
+            © {currentYear} Manoj Kumar Nishad. All rights reserved.
           </div>
           
           <div className="flex space-x-6 text-sm text-muted-foreground">

@@ -27,7 +27,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl">
           <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-fade-up" style={{ animationDelay: '0.2s' }}>
-            Hi, I'm <span className="gradient-text">Manoj Nishad</span>
+            Hi, I'm <span className="gradient-text">Manoj Kumar Nishad</span>
           </h1>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-fade-up" style={{ animationDelay: '0.4s' }}>
             <span>{typedText}</span>

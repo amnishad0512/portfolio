@@ -10,7 +10,7 @@ import Footer from '@/components/Footer';
 const Index = () => {
   useEffect(() => {
     // Update page title
-    document.title = 'John Doe - MERN Stack Developer';
+    document.title = 'Manoj kumar Nishad - MERN Stack Developer';
 
     // Add intersection observer for section animations
     const observer = new IntersectionObserver(

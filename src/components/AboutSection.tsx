@@ -80,7 +80,7 @@ const AboutSection = () => {
                   {"  "}
                   <span className="text-yellow-300">name</span>
                   <span className="text-blue-400">:</span>{" "}
-                  <span className="text-green-300">'Manoj Nishad'</span>,{"\n"}
+                  <span className="text-green-300">'Manoj Kumar Nishad'</span>,{"\n"}
                   {"  "}
                   <span className="text-yellow-300">title</span>
                   <span className="text-blue-400">:</span>{" "}
