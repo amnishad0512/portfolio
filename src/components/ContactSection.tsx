@@ -1,4 +1,5 @@
-import React from 'react';
+import * as React from 'react';
+import { useState } from 'react';
 import { 
   Mail, 
   MapPin, 
@@ -6,11 +7,73 @@ import {
   Github, 
   Linkedin, 
   Twitter,
-  Send
+  Send,
+  Loader2
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import emailjs from '@emailjs/browser';
+import { useToast } from "@/components/ui/use-toast";
 
 const ContactSection = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [isLoading, setIsLoading] = useState(false);
+  const { toast } = useToast();
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    try {
+      await emailjs.send(
+        'Portfolio', // Service ID
+        'template_q6dhyig', // Template ID
+        {
+          to_email: 'amnishad0512@gmail.com', // Your email address
+          to_name: 'Manoj Kumar Nishad',
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: `Portfolio Contact: Message from ${formData.name}`,
+          message: formData.message,
+          reply_to: formData.email,
+        },
+        'eb4cDuVLacWwCFpg3' // Public Key
+      );
+
+      toast({
+        title: "Message sent successfully!",
+        description: "I'll get back to you as soon as possible.",
+      });
+
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast({
+        title: "Error sending message",
+        description: "Please try again later or contact me directly via email.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <section id="contact" className="py-16 bg-background">
       <div className="container mx-auto px-4">
@@ -27,15 +90,19 @@ const ContactSection = () => {
           {/* Contact Form */}
           <div className="bg-card rounded-lg border border-border p-6">
             <h3 className="text-xl font-bold mb-6">Send me a message</h3>
-            <form className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 gap-4">
                 <div className="form-group">
                   <label htmlFor="name" className="block mb-2">Name</label>
                   <input
                     type="text"
                     id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
                     className="w-full p-3 rounded-md bg-secondary border border-border"
                     placeholder="Your name"
+                    required
                   />
                 </div>
                 <div className="form-group">
@@ -43,22 +110,43 @@ const ContactSection = () => {
                   <input
                     type="email"
                     id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     className="w-full p-3 rounded-md bg-secondary border border-border"
                     placeholder="Your email"
+                    required
                   />
                 </div>
                 <div className="form-group">
                   <label htmlFor="message" className="block mb-2">Message</label>
                   <textarea
                     id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                     rows={5}
                     className="w-full p-3 rounded-md bg-secondary border border-border"
                     placeholder="Your message"
+                    required
                   ></textarea>
                 </div>
               </div>
-              <Button type="submit" className="flex items-center gap-2">
-                Send Message <Send className="w-4 h-4" />
+              <Button 
+                type="submit" 
+                className="flex items-center gap-2"
+                disabled={isLoading}
+              >
+                {isLoading ? (
+                  <>
+                    <Loader2 className="w-4 h-4 animate-spin" />
+                    Sending...
+                  </>
+                ) : (
+                  <>
+                    Send Message <Send className="w-4 h-4" />
+                  </>
+                )}
               </Button>
             </form>
           </div>
