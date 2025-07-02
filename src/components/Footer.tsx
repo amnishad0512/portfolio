@@ -51,7 +51,7 @@ const Footer = () => {
             © {currentYear} Manoj Kumar Nishad. All rights reserved.
           </div>
           
-          <div className="flex space-x-6 text-sm text-muted-foreground">
+          {/* <div className="flex space-x-6 text-sm text-muted-foreground">
             <a href="#" className="hover:text-primary transition-colors">
               Privacy Policy
             </a>
@@ -59,7 +59,7 @@ const Footer = () => {
             <a href="#" className="hover:text-primary transition-colors">
               Terms of Service
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

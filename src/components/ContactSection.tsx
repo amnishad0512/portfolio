@@ -75,7 +75,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-16 bg-background">
+    <section id="contact" className="pb-16 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-2">
           <span className="text-primary">//</span> Get In Touch

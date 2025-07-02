@@ -6,6 +6,8 @@ import ProjectsSection from '@/components/ProjectsSection';
 import SkillsSection from '@/components/SkillsSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import HonorsSection from '@/components/HonorsSection';
+import RecommendationsSection from '@/components/RecommendationsSection';
 
 const Index = () => {
   useEffect(() => {
@@ -44,6 +46,8 @@ const Index = () => {
       <AboutSection />
       <ProjectsSection />
       <SkillsSection />
+      <HonorsSection />
+      <RecommendationsSection />
       <ContactSection />
       <Footer />
     </div>

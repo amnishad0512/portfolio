@@ -32,6 +32,36 @@ import {
   CheckCircle, // Data Validation
   GitBranch, // Gitlab
   Brain, // Data Structures & Algorithms
+  Send, // Postman
+  CloudCog, // AWS
+  Radio, // Socket.IO
+  Wrench, // DevTools
+  Terminal as TerminalIcon, // Command Line
+  Webhook, // API Testing
+  Gauge, // Performance Testing
+  Boxes, // NPM
+  Repeat, // Axios
+  Fingerprint, // JWT
+  Rocket, // Deployment
+  RefreshCcw, // React Query
+  Lock, // NextAuth
+  Database as ZustandIcon, // Zustand
+  FormInput, // React Hook Form
+  FileCheck, // Formik
+  CheckSquare, // Zod
+  Check, // Yup
+  Key, // PassportJS
+  FileWarning, // Express Validator
+  Cloud as CloudinaryIcon, // Cloudinary
+  Key as JWTIcon, // JWT
+  Lock as BcryptIcon, // Bcrypt
+  KeyRound as OAuth2Icon, // OAuth2
+  ShieldCheck, // RBAC
+  Lightbulb, // Lighthouse
+  Code as PatternIcon, // Design Pattern
+  FileCode, // ESLint
+  GitCommit, // Husky
+  Timer, // Rate Limiting
 } from 'lucide-react';
 
 // Tech skills with icons
@@ -52,6 +82,13 @@ const skills = [
       { name: 'SASS/LESS', icon: <ScrollText className="w-5 h-5 text-pink-400" /> },
       { name: 'Styled Components', icon: <Component className="w-5 h-5 text-pink-300" /> },
       { name: 'CSS-in-JS', icon: <Scissors className="w-5 h-5 text-blue-300" /> },
+      { name: 'React Query', icon: <RefreshCcw className="w-5 h-5 text-red-400" /> },
+      { name: 'NextAuth.js', icon: <Lock className="w-5 h-5 text-green-500" /> },
+      { name: 'Zustand', icon: <ZustandIcon className="w-5 h-5 text-yellow-500" /> },
+      { name: 'React Hook Form', icon: <FormInput className="w-5 h-5 text-pink-500" /> },
+      { name: 'Formik', icon: <FileCheck className="w-5 h-5 text-blue-400" /> },
+      { name: 'Zod', icon: <CheckSquare className="w-5 h-5 text-blue-600" /> },
+      { name: 'Yup', icon: <Check className="w-5 h-5 text-green-400" /> },
     ],
   },
   {
@@ -67,6 +104,16 @@ const skills = [
       { name: 'Data Validation', icon: <CheckCircle className="w-5 h-5 text-green-400" /> },
       { name: 'Authentication & Security', icon: <Shield className="w-5 h-5 text-yellow-500" /> },
       { name: 'Database Hosting', icon: <Cloud className="w-5 h-5 text-blue-500" /> },
+      { name: 'Postman', icon: <Send className="w-5 h-5 text-orange-500" /> },
+      { name: 'AWS', icon: <CloudCog className="w-5 h-5 text-yellow-500" /> },
+      { name: 'Socket.IO', icon: <Radio className="w-5 h-5 text-gray-400" /> },
+      { name: 'Passport.js', icon: <Key className="w-5 h-5 text-green-600" /> },
+      { name: 'Express Validator', icon: <FileWarning className="w-5 h-5 text-red-500" /> },
+      { name: 'Cloudinary', icon: <CloudinaryIcon className="w-5 h-5 text-blue-400" /> },
+      { name: 'JWT', icon: <JWTIcon className="w-5 h-5 text-purple-500" /> },
+      { name: 'Bcrypt', icon: <BcryptIcon className="w-5 h-5 text-red-400" /> },
+      { name: 'OAuth2', icon: <OAuth2Icon className="w-5 h-5 text-green-500" /> },
+      { name: 'RBAC', icon: <ShieldCheck className="w-5 h-5 text-yellow-600" /> },
     ],
   },
   {
@@ -79,6 +126,16 @@ const skills = [
       { name: 'CI/CD Pipelines', icon: <Workflow className="w-5 h-5 text-green-400" /> },
       { name: 'Agile Methodology', icon: <Users className="w-5 h-5 text-blue-300" /> },
       { name: 'Data Structures & Algorithms', icon: <Brain className="w-5 h-5 text-blue-300" /> },
+      { name: 'Chrome DevTools', icon: <Wrench className="w-5 h-5 text-blue-400" /> },
+      { name: 'NPM/Yarn', icon: <Boxes className="w-5 h-5 text-red-500" /> },
+      { name: 'Axios/Fetch', icon: <Repeat className="w-5 h-5 text-purple-400" /> },
+      { name: 'JWT/Auth', icon: <Fingerprint className="w-5 h-5 text-blue-500" /> },
+      { name: 'Deployment Tools', icon: <Rocket className="w-5 h-5 text-green-500" /> },
+      { name: 'Lighthouse', icon: <Lightbulb className="w-5 h-5 text-yellow-400" /> },
+      { name: 'Design Patterns', icon: <PatternIcon className="w-5 h-5 text-blue-500" /> },
+      { name: 'ESLint', icon: <FileCode className="w-5 h-5 text-purple-500" /> },
+      { name: 'Husky', icon: <GitCommit className="w-5 h-5 text-gray-400" /> },
+      { name: 'Rate Limiting', icon: <Timer className="w-5 h-5 text-red-400" /> },
     ],
   },
 ];
