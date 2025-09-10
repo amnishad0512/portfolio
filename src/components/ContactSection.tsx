@@ -166,7 +166,7 @@ const ContactSection = () => {
                 </div>
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-primary mr-3" />
-                  <a href="tel:+918435925392" className="hover:text-primary">+91 8435925392</a>
+                  <a href="tel:+918435925392" className="hover:text-primary">+91-8435925392</a>
                 </div>
               </div>
             </div>

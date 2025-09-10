@@ -2,7 +2,7 @@ import React from 'react';
 import { Code, Database, Layers, Globe, Server, Terminal } from 'lucide-react';
 
 // Import specific icons for each technology
-import { 
+import {
   Blocks, // React
   FileJson, // JavaScript
   FileType, // TypeScript
@@ -149,7 +149,7 @@ const SkillsSection = () => {
         </h2>
         <div className="h-1 w-24 bg-primary mb-8"></div>
         <p className="text-lg text-muted-foreground max-w-2xl mb-12">
-          As a MERN stack developer, I've cultivated a wide range of technical skills. Here's an overview 
+          Frontend-focused developer with strong UI skills and a basic understanding of backend technologies, enabling end-to-end project collaboration., I've cultivated a wide range of technical skills. Here's an overview
           of my expertise in various technologies and tools.
         </p>
 
@@ -162,7 +162,7 @@ const SkillsSection = () => {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 {skillGroup.technologies.map((tech) => (
-                  <div 
+                  <div
                     key={tech.name}
                     className="flex items-center p-3 rounded-md border border-border/50 bg-secondary/50 hover:border-primary transition-colors"
                   >

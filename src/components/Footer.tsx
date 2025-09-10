@@ -13,7 +13,7 @@ const Footer = () => {
               manojnishad<span className="text-primary">.com</span>
             </a>
             <p className="text-muted-foreground mt-2">
-              Building modern web experiences with MERN stack
+              Designing the web with code, creativity, and care
             </p>
           </div>
           

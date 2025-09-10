@@ -9,7 +9,7 @@ const HeroSection = () => {
   const [showCursor, setShowCursor] = useState(true);
 
   const texts = [
-    'Frontend Engineer',
+    'Frontend Developer',
     'React & Next.js Specialist',
   ];
 
@@ -68,7 +68,7 @@ const HeroSection = () => {
               {<span className="typing-cursor"></span>}
             </h2>
             <p className="text-xl text-muted-foreground mb-8 animate-fade-up" style={{ animationDelay: '0.6s' }}>
-              I'm a Frontend Engineer with 3+ years of experience building fast, modern, and user-friendly web applications using React.js, Next.js, and modern tools like Tailwind CSS, Redux Toolkit, and TypeScript.
+            I'm a Frontend Developer with 3.5+ years of experience building fast, modern, and user-friendly web applications using React.js, Next.js, and modern tools like Tailwind CSS, Redux Toolkit, and TypeScript. I also have basic knowledge of backend development with Node.js, Express, and MongoDB, allowing me to collaborate effectively on full-stack projects.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: '0.8s' }}>
               <Button size="lg" className="group" asChild>

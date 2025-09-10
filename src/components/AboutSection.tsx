@@ -15,7 +15,7 @@ const AboutSection = () => {
             <div className="h-1 w-24 bg-primary mb-8"></div>
 
             <div className="space-y-4 text-lg">
-              <p>I'm a Frontend Engineer with 3+ years of experience building scalable and responsive web applications using React.js, Next.js, and modern frontend technologies.</p>
+              <p>I'm a Frontend Engineer with 3.5+ years of experience building scalable and responsive web applications using React.js, Next.js, and modern frontend technologies.</p>
               <p>My main focus is on the UI/UX side — creating clean, accessible, and performance-optimized interfaces that users enjoy.</p>
               <p>While frontend is my core strength, I also understand backend concepts and can work across the full MERN stack when needed — giving me flexibility to integrate APIs, manage authentication, or work with databases like MongoDB.</p>
             </div>
@@ -34,7 +34,7 @@ const AboutSection = () => {
                     />
                   </div>
                   <div className="border-l-2 border-primary pl-4 pb-4 flex-1">
-                    <p className="text-primary font-medium">2022 - Present</p>
+                    <p className="text-primary font-medium">2022 - 2025</p>
                     <h4 className="text-lg font-semibold">Software Engineer</h4>
                     <p className="text-muted-foreground">Inspironlabs Software System Private Limited, Bengaluru</p>
                   </div>
@@ -83,7 +83,7 @@ const AboutSection = () => {
                   </div>
                   <div className="border-l-2 border-primary pl-4 flex-1">
                     <p className="text-primary font-medium">2016 - 2020</p>
-                    <h4 className="text-lg font-semibold">B.Tech Computer Science and Engineering (CSE)</h4>
+                    <h4 className="text-lg font-semibold">B.Tech In Computer Science and Engineering (CSE)</h4>
                     <p className="text-muted-foreground">Chhattisgarh Swami Vivekanand Technical University, Bhilai</p>
                   </div>
                 </li>
@@ -113,7 +113,7 @@ const AboutSection = () => {
                   {"  "}
                   <span className="text-yellow-300">title</span>
                   <span className="text-blue-400">:</span>{" "}
-                  <span className="text-green-300">'Frontend Engineer'</span>,{"\n"}
+                  <span className="text-green-300">'Frontend Developer'</span>,{"\n"}
                   {"  "}
                   <span className="text-yellow-300">skills</span>
                   <span className="text-blue-400">:</span>{" "}
