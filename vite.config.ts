@@ -18,9 +18,9 @@ export default defineConfig(({ mode }) => ({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.png', 'apple-touch-icon.png', 'masked-icon.svg'],
       manifest: {
-        name: 'Manoj Kumar Nishad | MERN Stack Developer',
+        name: 'Manoj Kumar Nishad | Frontend Developer',
         short_name: 'Portfolio',
-        description: 'Professional portfolio of Manoj Kumar Nishad - Expert MERN Stack Developer',
+        description: 'Professional portfolio of Manoj Kumar Nishad - Expert Frontend Developer',
         theme_color: '#ffffff',
         background_color: '#ffffff',
         display: 'standalone',
