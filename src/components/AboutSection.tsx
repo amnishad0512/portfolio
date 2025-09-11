@@ -155,8 +155,6 @@ const AboutSection = () => {
                   {"    "}
                   <span className="text-green-300">'Git'</span>{"\n"}
                   {"    "}
-                  <span className="text-green-300">'Jest'</span>{"\n"}
-                  {"    "}
                   <span className="text-green-300">'Data Structures'</span>{"\n"}
                   {"    "}
                   <span className="text-green-300">'Algorithms'</span>{"\n"}

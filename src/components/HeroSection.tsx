@@ -81,7 +81,7 @@ const HeroSection = () => {
                 <a href="#contact">Get In Touch</a>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <a href="https://drive.google.com/file/d/1w5fdwuu57mvdQF44xIHNvmvAHHzPuZMS/view?usp=drive_link" target='_blank'>Resume</a>
+                <a href="https://drive.google.com/drive/folders/16mU1DaBggI0eQ_eiHWzHU5-K503_4uei?usp=sharing" target='_blank'>Resume</a>
               </Button>
             </div>
           </div>
