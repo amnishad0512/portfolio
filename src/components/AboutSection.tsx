@@ -15,7 +15,7 @@ const AboutSection = () => {
             <div className="h-1 w-24 bg-primary mb-8"></div>
 
             <div className="space-y-4 text-lg">
-              <p>I'm a Frontend Developer with 3.5+ years of experience building scalable and responsive web applications using React.js, Next.js, and modern frontend technologies.</p>
+              <p>I'm a Frontend Developer with 3.3+ years of experience building scalable and responsive web applications using React.js, Next.js, and modern frontend technologies.</p>
               <p>My main focus is on the UI/UX side — creating clean, accessible, and performance-optimized interfaces that users enjoy.</p>
               <p>While frontend is my core strength, I also understand backend concepts and can work across the full MERN stack when needed — giving me flexibility to integrate APIs, manage authentication, or work with databases like MongoDB.</p>
             </div>
