@@ -168,7 +168,7 @@ const AboutSection = () => {
 
                   {"  "}
                   <span className="text-yellow-300">focus</span>:{" "}
-                  <span className="text-green-300 break-words">'Scalable UI, Performance, User Experience'</span>,{"\n"}
+                  <span className="text-green-300 break-words">'Scalable UI, Performance,<br/> User Experience'</span>,{"\n"}
                   {"  "}
                   <span className="text-yellow-300">contact</span>:{" "}
                   <span className="text-green-300">'amnishad0512@gmail.com'</span>{"\n"}
