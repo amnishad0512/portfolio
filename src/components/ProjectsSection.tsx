@@ -4,67 +4,113 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 
-// Sample project data
 const projects = [
   {
-    id: 1,
-    title: 'DYP & DYD',
-    description: 'Integrated Single Sign-On (SSO) for multiple identity providers including Azure AD, Okta, and ForgeRock, supporting legacy and modern authentication flows. Built reusable authentication components and enhanced user experience with secure third-party tool integrations.',
-    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085',
-    tags: ['React.js', 'Typescript', 'Material UI', 'Mobx','ESLint', 'Styled Components', 'Sass', 'OpenID Connect'],
-    liveLink: '',
-    githubLink: '',
-    category: 'frontend'
+    id: 0,
+    title: 'Shine Candidate Platform',
+    description:
+      'Improved user journeys and conversion by redesigning login, registration, profile, and job search on a large-scale job platform.',
+    tags: [
+      'React.js',
+      'Next.js',
+      'TypeScript',
+      'React Native',
+      'Redux Toolkit',
+      'REST API'
+    ],
+    liveLink: 'https://www.shine.com',
+    category: 'frontend',
+    image:"/shine.png"
   },
+
+  {
+    id: 1,
+    title: 'SSO Integration Platform (DYP & DYD)',
+    description:
+      'Implemented multi-IDP SSO using OpenID Connect enabling secure access across applications and third-party tools.',
+    tags: [
+      'React.js',
+      'TypeScript',
+      'MobX',
+      'Material UI',
+      'OpenID Connect',
+      'Azure AD',
+      'Okta',
+      'ForgeRock'
+    ],
+    liveLink: '',
+    category: 'fullstack',
+    image:"/dyp.png"
+  },
+
   {
     id: 2,
-    title: 'HTG Auth Client',
-    description: 'Developed a centralized SSO Controller to connect multiple apps to different IDPs. Created an admin portal for dynamic authentication type mapping and implemented validated, reusable forms for seamless data entry.',
-    image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d',
-    tags: ['React.js', 'Typescript', 'Context API', 'Yup','React Hook Form', 'Material UI', 'Azure', 'Okta', 'Forgerock'],
+    title: 'SSO Controller Platform (HTG Auth Client)',
+    description:
+      'Built centralized authentication system to configure multiple IDPs and manage dynamic authentication flows.',
+    tags: [
+      'React.js',
+      'TypeScript',
+      'Context API',
+      'React Hook Form',
+      'Yup',
+    ],
     liveLink: '',
-    githubLink: '',
-    category: 'frontend'
+    category: 'frontend',
+    image:"/dyp.png"
   },
+
   {
     id: 3,
-    title: 'The Real Feel',
-    description: 'Built a real-time platform to track and visualize user emotions geographically. Features include mood input, emoji-based mapping, and filtering by date/location, all with responsive and optimized UI.',
-    image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6',
-    tags: ['Next.js', 'Tailwind', 'Mapbox', 'Redux Toolkit', 'Node.js', 'Express', 'MongoDB', 'Formik', 'Stripe'],
-    liveLink: '',
-    githubLink: '',
-    category: 'fullstack, frontend, backend'
+    title: 'Vendora – E-commerce Platform',
+    description:
+      'Developed full-stack e-commerce platform with checkout, payments, and scalable order management.',
+    tags: [
+      'React.js',
+      'Tailwind CSS',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'Razorpay'
+    ],
+    liveLink: 'https://vendora.manojnishad.in/',
+    githubLink: 'https://github.com/amnishad0512/vendora',
+    category: 'fullstack',
+    image:"./vendora.png"
   },
+
   {
     id: 4,
-    title: 'Portfolio',
-    description: 'Personal portfolio website showcasing my skills, projects, and experience as a Frontend Developer. Built with React.js and Typescript, featuring responsive design, smooth navigation, and an interactive interface to highlight Projects and achievements.',
-    image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6',
-    tags: ['React.js', 'TypeScript', 'Tailwind', 'Radix UI', 'Lucide React', 'Email.js', 'ESLint', 'React Hook Form', 'Zod'],
-    liveLink: 'https://manojnishad.com',
-    githubLink: '',
-    category: 'frontend'
+    title: 'RealFeel – Sentiment Platform',
+    description:
+      'Built real-time emotion tracking platform with map-based visualization and optimized UI performance.',
+    tags: [
+      'Next.js',
+      'TypeScript',
+      'Redux Toolkit',
+      'Mapbox',
+      'Node.js',
+      'MongoDB'
+    ],
+    liveLink: '',
+    category: 'fullstack',
+    image:"./realfeel.png"
   },
-  // {
-  //   id: 5,
-  //   title: 'Match',
-  //   description: 'A dedicated matrimonial platform tailored for the Hindu community in Chhattisgarh. The site covers all districts, tehsils, and villages across the state, making matchmaking accessible and culturally specific to every region.',
-  //   image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158',
-  //   tags: ['Next.js', 'Typescript', 'Tailwind', '2Factor', 'Sass', 'React Hook Form', 'Express', 'MongoDB', 'Nodemailer',],
-  //   liveLink: 'https://match.manojnishad.com',
-  //   githubLink: 'https://github.com/amnishad0512/Matrimony',
-  //   category: 'fullstack, frontend, backend'
-  // },
+
   {
     id: 5,
-    title: 'E-Commerce Platform',
-    description: 'An online marketplace designed to sell a wide range of electronic products and furniture. The platform aims to offer a user-friendly shopping experience, secure payment options, and efficient delivery services, catering to customers across urban and rural areas.',
-    image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b',
-    tags: ['Next.js', 'Context API', 'Typescript', 'Tailwind', 'Husky', 'ESLint', 'React Hook Form', 'React Icons', 'Stripe'],
-    liveLink: 'https://santoshielectric.in/',
-    githubLink: '',
-    category: 'fullstack, frontend, backend'
+    title: 'Portfolio Website',
+    description:
+      'Designed responsive portfolio with modern UI, smooth navigation, and performance-focused architecture.',
+    tags: [
+      'React.js',
+      'TypeScript',
+      'Tailwind CSS',
+    ],
+    liveLink: 'https://manojnishad.in',
+    githubLink: 'https://github.com/amnishad0512/portfolio',
+    category: 'frontend',
+    image: '/portfolio.png'
   }
 ];
 
@@ -90,8 +136,7 @@ const ProjectsSection = () => {
         </h2>
         <div className="h-1 w-24 bg-primary mb-8"></div>
         <p className="text-lg text-muted-foreground max-w-2xl mb-12">
-          Here are some of the projects I've worked on. Each project showcases different skills
-          and technologies from my experience as a Frontend Developer.
+          A selection of projects demonstrating experience in building scalable, high-performance applications, including production systems, authentication platforms, and full-stack solutions.
         </p>
 
         {/* Filter buttons */}

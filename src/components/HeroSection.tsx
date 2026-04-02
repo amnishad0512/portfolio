@@ -3,72 +3,19 @@ import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
-  const [typedText, setTypedText] = useState('');
-  const [textIndex, setTextIndex] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [showCursor, setShowCursor] = useState(true);
-
-  const texts = [
-    'Frontend Developer',
-    'React & Next.js Specialist',
-  ];
-
-  useEffect(() => {
-    const currentText = texts[textIndex];
-    const typingSpeed = isDeleting ? 50 : 100;
-    const deletingDelay = 1500; // Delay before starting to delete
-    const nextTextDelay = 500; // Delay before starting the next text
-
-    if (!isDeleting && typedText === currentText) {
-      // Wait before starting to delete
-      const timeout = setTimeout(() => {
-        setIsDeleting(true);
-      }, deletingDelay);
-      return () => clearTimeout(timeout);
-    }
-
-    if (isDeleting && typedText === '') {
-      setIsDeleting(false);
-      setTextIndex((prev) => (prev + 1) % texts.length);
-      const timeout = setTimeout(() => {}, nextTextDelay);
-      return () => clearTimeout(timeout);
-    }
-
-    const timeout = setTimeout(() => {
-      setTypedText(prev => {
-        if (isDeleting) {
-          return prev.slice(0, -1);
-        } else {
-          return currentText.slice(0, prev.length + 1);
-        }
-      });
-    }, typingSpeed);
-
-    return () => clearTimeout(timeout);
-  }, [typedText, isDeleting, textIndex]);
-
-  // Keep cursor blinking
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setShowCursor((prev) => !prev);
-    }, 500);
-    return () => clearTimeout(timeout);
-  }, [showCursor]);
-
   return (
     <section id="home" className="min-h-screen flex items-center pt-20 pb-16">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="max-w-2xl">
-            <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-fade-up" style={{ animationDelay: '0.2s' }}>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-up" style={{ animationDelay: '0.2s' }}>
               Hi, I'm <span className="gradient-text">Manoj Kumar Nishad</span>
             </h1>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-fade-up" style={{ animationDelay: '0.4s' }}>
-              <span>{typedText}</span>
-              {<span className="typing-cursor"></span>}
-            </h2>
+            <h3 className="text-xl md:text-2xl font-bold mb-4 animate-fade-up" style={{ animationDelay: '0.2s' }}>
+              React.js | Next.js | TypeScript | Node.js | Express.js | MongoDB | React Native
+            </h3>
             <p className="text-xl text-muted-foreground mb-8 animate-fade-up" style={{ animationDelay: '0.6s' }}>
-            I'm a Frontend Developer with 3.3+ years of experience building fast, modern, and user-friendly web applications using React.js, Next.js, and modern tools like Tailwind CSS, Redux Toolkit, and TypeScript. I also have basic knowledge of backend development with Node.js, Express, and MongoDB, allowing me to collaborate effectively on full-stack projects.
+           Building scalable, high-performance web applications with focus on user experience, performance, and frontend architecture.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: '0.8s' }}>
               <Button size="lg" className="group" asChild>
@@ -81,7 +28,7 @@ const HeroSection = () => {
                 <a href="#contact">Get In Touch</a>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <a href="https://drive.google.com/drive/folders/16mU1DaBggI0eQ_eiHWzHU5-K503_4uei?usp=sharing" target='_blank'>Resume</a>
+                <a href="https://drive.google.com/file/d/1tGZlepFecqIEvr9_pDUeNpHiS9M8PPqs/view?usp=sharing" target='_blank'>Resume</a>
               </Button>
             </div>
           </div>

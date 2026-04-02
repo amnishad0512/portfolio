@@ -62,6 +62,7 @@ import {
   FileCode, // ESLint
   GitCommit, // Husky
   Timer, // Rate Limiting
+
 } from 'lucide-react';
 
 // Tech skills with icons
@@ -70,35 +71,105 @@ const skills = [
     category: 'Frontend',
     icon: <Layers className="w-6 h-6 text-primary" />,
     technologies: [
-      { name: 'React.js', icon: <Blocks className="w-5 h-5 text-blue-500" /> },
-      { name: 'JavaScript (ES6+)', icon: <FileJson className="w-5 h-5 text-yellow-400" /> },
-      { name: 'TypeScript', icon: <FileType className="w-5 h-5 text-blue-600" /> },
-      { name: 'HTML5 & CSS3', icon: <FileCode2 className="w-5 h-5 text-orange-500" /> },
-      { name: 'Redux', icon: <Combine className="w-5 h-5 text-purple-500" /> },
-      { name: 'Redux Toolkit', icon: <BoxSelect className="w-5 h-5 text-purple-600" /> },
-      { name: 'Next.js', icon: <ArrowRightLeft className="w-5 h-5 text-gray-200" /> },
-      { name: 'Tailwind CSS', icon: <Paintbrush className="w-5 h-5 text-cyan-400" /> },
-      { name: 'Material UI', icon: <MUIIcon className="w-5 h-5 text-blue-400" /> },
-      { name: 'SASS/LESS', icon: <ScrollText className="w-5 h-5 text-pink-400" /> },
-      { name: 'Styled Components', icon: <Component className="w-5 h-5 text-pink-300" /> },
-      { name: 'CSS-in-JS', icon: <Scissors className="w-5 h-5 text-blue-300" /> },
+      { name: 'React.js', icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" className="w-5 h-5" /> },
+      { name: 'JavaScript (ES6+)', icon: 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-5 h-5" />
+       },
+      { name: 'TypeScript', icon: 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+       },
+      { name: 'HTML5', icon: 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+       },
+       { name: 'CSS3', icon: 
+        
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+          
+       },
+      { name: 'Redux', icon: 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg" />
+      },
+      { name: 'Redux Toolkit', icon: 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg" />
+       },
+      { name: 'Next.js', icon: 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
+       },
+      { name: 'React Native', icon: <img src="/react-native.svg" alt="React Native" className="w-5 text-green-500" /> },
+      { name: 'Tailwind CSS', icon: 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+       },
+      { name: 'Material UI', icon: 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg" />
+       },
+      { name: 'SASS', icon: 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" />
+       },
+       { name: 'Less', icon: 
+        
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/less/less-plain-wordmark.svg" />
+          
+       },
+      { name: 'Styled Components', icon: 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/styledcomponents/styledcomponents-original.svg" />
+       },
+       {
+        name: "jQuery", icon: 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" />
+       },
       { name: 'React Query', icon: <RefreshCcw className="w-5 h-5 text-red-400" /> },
       { name: 'NextAuth.js', icon: <Lock className="w-5 h-5 text-green-500" /> },
-      { name: 'Zustand', icon: <ZustandIcon className="w-5 h-5 text-yellow-500" /> },
+      { name: 'Zustand', icon: 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/zustand/zustand-original.svg" />
+      },
       { name: 'React Hook Form', icon: <FormInput className="w-5 h-5 text-pink-500" /> },
       { name: 'Formik', icon: <FileCheck className="w-5 h-5 text-blue-400" /> },
       { name: 'Zod', icon: <CheckSquare className="w-5 h-5 text-blue-600" /> },
       { name: 'Yup', icon: <Check className="w-5 h-5 text-green-400" /> },
+      {
+        name:"Android Studio", icon:
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" />
+      
+      },
+      {
+        name:"Ant Design", icon:
+       
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/antdesign/antdesign-original.svg" />
+      
+      },
+      {
+        name:"Bootstrap",icon:
+       
+        
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+          
+          
+
+      },{
+        name:"Chart.js",icon:
+       
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chartjs/chartjs-original.svg" />
+          
+
+      }
     ],
   },
   {
     category: 'Backend',
     icon: <Server className="w-6 h-6 text-primary" />,
     technologies: [
-      { name: 'Node.js', icon: <ServerIcon className="w-5 h-5 text-green-500" /> },
-      { name: 'Express.js', icon: <Router className="w-5 h-5 text-gray-400" /> },
-      { name: 'MongoDB', icon: <DatabaseIcon className="w-5 h-5 text-green-600" /> },
-      { name: 'Mongoose', icon: <Code2 className="w-5 h-5 text-orange-500" /> },
+      { name: 'Node.js', icon: 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+       },
+      { name: 'Express.js', icon: 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />
+       },
+      { name: 'MongoDB', icon: 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
+       },
+      { name: 'Mongoose', icon: 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg" />
+      },
       { name: 'SSO', icon: <KeyRound className="w-5 h-5 text-purple-500" /> },
       { name: 'RESTful APIs', icon: <Cable className="w-5 h-5 text-blue-400" /> },
       { name: 'Data Validation', icon: <CheckCircle className="w-5 h-5 text-green-400" /> },
@@ -120,22 +191,66 @@ const skills = [
     category: 'Tools & Others',
     icon: <Terminal className="w-6 h-6 text-primary" />,
     technologies: [
-      { name: 'Git & GitHub', icon: <Github className="w-5 h-5 text-gray-300" /> },
-      { name: 'Gitlab', icon: <GitBranch className="w-5 h-5 text-orange-400" /> },
-      { name: 'Jest & Testing', icon: <Bug className="w-5 h-5 text-red-400" /> },
+      { name: 'Git & GitHub', icon: 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+       },
+      { name: 'Gitlab', icon: 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg" />
+       },
+      { name: 'Jest & Testing', icon: 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg" />
+      },
       { name: 'CI/CD Pipelines', icon: <Workflow className="w-5 h-5 text-green-400" /> },
       { name: 'Agile Methodology', icon: <Users className="w-5 h-5 text-blue-300" /> },
       { name: 'Data Structures & Algorithms', icon: <Brain className="w-5 h-5 text-blue-300" /> },
       { name: 'Chrome DevTools', icon: <Wrench className="w-5 h-5 text-blue-400" /> },
       { name: 'NPM/Yarn', icon: <Boxes className="w-5 h-5 text-red-500" /> },
-      { name: 'Axios/Fetch', icon: <Repeat className="w-5 h-5 text-purple-400" /> },
+      { name: 'Axios/Fetch', icon: 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/axios/axios-plain.svg" />
+       },
+       {
+        name: "Azure",icon:
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" />
+    
+       },
+       {
+name: "Babel",icon:
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/babel/babel-original.svg" />
+
+       },
+       {
+        name:"Bash",icon:
+       
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" />
+          
+
+       },
+       {
+name:"Bitbucket",icon:
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bitbucket/bitbucket-original.svg" />
+
+       },
       { name: 'JWT/Auth', icon: <Fingerprint className="w-5 h-5 text-blue-500" /> },
       { name: 'Deployment Tools', icon: <Rocket className="w-5 h-5 text-green-500" /> },
       { name: 'Lighthouse', icon: <Lightbulb className="w-5 h-5 text-yellow-400" /> },
       { name: 'Design Patterns', icon: <PatternIcon className="w-5 h-5 text-blue-500" /> },
-      { name: 'ESLint', icon: <FileCode className="w-5 h-5 text-purple-500" /> },
+      { name: 'ESLint', icon: 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eslint/eslint-original.svg" />
+       },
       { name: 'Husky', icon: <GitCommit className="w-5 h-5 text-gray-400" /> },
       { name: 'Rate Limiting', icon: <Timer className="w-5 h-5 text-red-400" /> },
+      { name: "AWS", icon:
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+      },{
+        name:"JIRA",icon:
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg" />
+      
+      },{
+        name:"Json",
+        icon:
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg" />
+      
+      }
     ],
   },
 ];
@@ -149,8 +264,7 @@ const SkillsSection = () => {
         </h2>
         <div className="h-1 w-24 bg-primary mb-8"></div>
         <p className="text-lg text-muted-foreground max-w-2xl mb-12">
-          Frontend-focused developer with strong UI skills and a basic understanding of backend technologies, enabling end-to-end project collaboration., I've cultivated a wide range of technical skills. Here's an overview
-          of my expertise in various technologies and tools.
+          Frontend-focused engineer with strong expertise in building scalable, high-performance UI and hands-on experience across APIs, authentication systems, and full-stack collaboration.
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

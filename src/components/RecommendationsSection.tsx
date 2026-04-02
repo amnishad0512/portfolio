@@ -10,6 +10,18 @@ interface Recommendation {
 
 const recommendations: Recommendation[] = [
   {
+    text: "I had the opportunity to work with Manoj Kumar Nishad on the DYP project, where he made a strong impact as a frontend developer. He consistently took ownership of critical tasks and delivered high-quality, well-structured solutions with great attention to detail. Manoj has a solid grasp of frontend technologies and approaches his work with professionalism and reliability. He is efficient, dependable, and collaborates well within a team environment. I would confidently recommend Manoj for any frontend development role and believe he would be a valuable asset to any organization.",
+    author: "Niranjan Kumar",
+    position: "Frontend Engineer",
+    company: "Inspironlabs Software Systems Pvt Ltd"
+  },
+  {
+    text: "Manoj Kumar is a highly dependable professional with strong technical skills and a great sense of ownership. His problem-solving mindset and collaborative approach make him a valuable asset to any team. I’ve really enjoyed working with Manoj.",
+    author: "Sourav Samanta",
+    position: "Full Stack Developer",
+    company: "Inspironlabs Software Systems Pvt Ltd"
+  },
+  {
     text: "I had the pleasure of working with Manoj on The Realfeel Project, a powerful real-time sentiment tracking platform. Manoj played a crucial role in building the system that enabled users to log daily emotions and visualize them geographically using emojis and text, beautifully integrated with Mapbox GL.His attention to detail, strong problem-solving skills, and collaborative spirit made a significant impact on the project’s success. Manoj is not only technically sound but also brings creativity and thoughtfulness to every aspect of development. I highly recommend him for any team looking for a dedicated and innovative engineer.",
     author: "Dharmesh Sonar",
     position: "Nodejs Developer",
@@ -37,8 +49,9 @@ const RecommendationsSection = () => {
           {recommendations.map((rec, index) => (
             <div 
               key={index} 
-              className="bg-card rounded-lg p-6 shadow-sm animate-fade-up"
+              className="cursor-pointer bg-card rounded-lg p-6 shadow-sm animate-fade-up"
               style={{ animationDelay: `${index * 0.2}s` }}
+              onClick={() => window.open("https://www.linkedin.com/in/amnishad0512/details/recommendations/?detailScreenTabIndex=0", '_blank')}
             >
               <div className="flex gap-4">
                 <div className="flex-shrink-0">

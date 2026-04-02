@@ -15,14 +15,38 @@ const AboutSection = () => {
             <div className="h-1 w-24 bg-primary mb-8"></div>
 
             <div className="space-y-4 text-lg">
-              <p>I'm a Frontend Developer with 3.3+ years of experience building scalable and responsive web applications using React.js, Next.js, and modern frontend technologies.</p>
-              <p>My main focus is on the UI/UX side — creating clean, accessible, and performance-optimized interfaces that users enjoy.</p>
-              <p>While frontend is my core strength, I also understand backend concepts and can work across the full MERN stack when needed — giving me flexibility to integrate APIs, manage authentication, or work with databases like MongoDB.</p>
+              <p>
+                I am a Senior Frontend Developer with 3.8+ years of experience building scalable, high-performance web applications using React.js, Next.js, and TypeScript.
+              </p>
+
+              <p>
+                Currently working on a large-scale job platform, focusing on improving core user journeys such as login, registration, profile, and job search, while optimizing performance and overall user experience.
+              </p>
+
+              <p>
+                Strong in frontend architecture, API integration, and performance optimization, with experience in implementing SSO systems (Azure AD, Okta, ForgeRock). Also have hands-on experience with React Native and working knowledge of Node.js, Express, and MongoDB for full-stack development.
+              </p>
             </div>
 
             <div className="mt-8">
               <h3 className="text-xl font-bold mb-4">Education & Experience</h3>
               <ul className="space-y-4">
+                <li className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-white flex-shrink-0 flex items-center justify-center">
+                    <img
+                      src="/htmedia.svg"
+                      alt="HT Media Group Logo"
+                      width={42}
+                      height={42}
+                      className="object-contain"
+                    />
+                  </div>
+                  <div className="border-l-2 border-primary pl-4 pb-4 flex-1">
+                    <p className="text-primary font-medium">2025 - 2026</p>
+                    <h4 className="text-lg font-semibold">Senior Frontend Engineer</h4>
+                    <p className="text-muted-foreground">HT Media Group, Gurugram</p>
+                  </div>
+                </li>
                 <li className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-lg bg-white flex-shrink-0 flex items-center justify-center">
                     <img
@@ -106,81 +130,51 @@ const AboutSection = () => {
                   <span className="text-green-400">developer</span>{" "}
                   <span className="text-blue-400">=</span>{" "}
                   <span className="text-blue-400">{"{"}</span>{"\n"}
+
                   {"  "}
-                  <span className="text-yellow-300">name</span>
-                  <span className="text-blue-400">:</span>{" "}
+                  <span className="text-yellow-300">name</span>:{" "}
                   <span className="text-green-300">'Manoj Kumar Nishad'</span>,{"\n"}
+
                   {"  "}
-                  <span className="text-yellow-300">title</span>
-                  <span className="text-blue-400">:</span>{" "}
-                  <span className="text-green-300">'Frontend Developer'</span>,{"\n"}
+                  <span className="text-yellow-300">title</span>:{" "}
+                  <span className="text-green-300">'Senior Frontend Developer'</span>,{"\n"}
+
                   {"  "}
-                  <span className="text-yellow-300">skills</span>
-                  <span className="text-blue-400">:</span>{" "}
-                  <span className="text-blue-400">{"["}</span>{"\n"}
-                  {"    "}
-                  <span className="text-green-300">'HTML5'</span>,{"\n"}
-                  {"    "}
-                  <span className="text-green-300">'CSS3'</span>,{"\n"}
-                  {"    "}
-                  <span className="text-green-300">'Sass'</span>,{"\n"}
-                  {"    "}
-                  <span className="text-green-300">'Tailwind CSS'</span>,{"\n"}
-                  {"    "}
-                  <span className="text-green-300">'Material UI'</span>,{"\n"}
-                  {"    "}
-                  <span className="text-green-300">'Ant Design'</span>,{"\n"}
-                  {"    "}
-                  <span className="text-green-300">'Bootstrap'</span>,{"\n"}
-                  {"    "}
-                  <span className="text-green-300">'JavaScript (ES6+)'</span>,{"\n"}
-                  {"    "}
-                  <span className="text-green-300">'TypeScript'</span>,{"\n"}
-                  {"    "}
-                  <span className="text-green-300">'React.js'</span>,{"\n"}
-                  {"    "}
-                  <span className="text-green-300">'Next.js'</span>,{"\n"}
-                  {"    "}
-                  <span className="text-green-300">'Redux Toolkit'</span>,{"\n"}
-                  {"    "}
-                  <span className="text-green-300">'Styled Components'</span>,{"\n"}
-                  {"    "}
-                  <span className="text-green-300">'Node.js'</span>,{"\n"}
-                  {"    "}
-                  <span className="text-green-300">'Express.js'</span>,{"\n"}
-                  {"    "}
-                  <span className="text-green-300">'MongoDB'</span>,{"\n"}
-                  {"    "}
-                  <span className="text-green-300">'RESTful APIs'</span>,{"\n"}
-                  {"    "}
-                  <span className="text-green-300">'Git'</span>{"\n"}
-                  {"    "}
-                  <span className="text-green-300">'Data Structures'</span>{"\n"}
-                  {"    "}
-                  <span className="text-green-300">'Algorithms'</span>{"\n"}
+                  <span className="text-yellow-300">experience</span>:{" "}
+                  <span className="text-green-300">'3.8+ Years'</span>,{"\n"}
+
                   {"  "}
-                  <span className="text-blue-400">{"]"}</span>,{"\n"}
+                  <span className="text-yellow-300">coreSkills</span>: {"["}{"\n"}
+                  {"    "}<span className="text-green-300">'React.js'</span>,{"\n"}
+                  {"    "}<span className="text-green-300">'Next.js'</span>,{"\n"}
+                  {"    "}<span className="text-green-300">'TypeScript'</span>,{"\n"}
+                  {"    "}<span className="text-green-300">'React Native'</span>,{"\n"}
+                  {"  "}{"]"}, {"\n"}
+
                   {"  "}
-                  <span className="text-yellow-300">interests</span>
-                  <span className="text-blue-400">:</span>{" "}
-                  <span className="text-blue-400">{"["}</span>{"\n"}
-                  {"    "}
-                  <span className="text-green-300">'Building Interactive UI'</span>,{"\n"}
-                  {"    "}
-                  <span className="text-green-300">'Open Source Contribution'</span>,{"\n"}
-                  {"    "}
-                  <span className="text-green-300">'Design to Code'</span>,{"\n"}
-                  {"    "}
-                  <span className="text-green-300">'UI/UX Trends'</span>,{"\n"}
+                  <span className="text-yellow-300">specialization</span>: {"["}{"\n"}
+                  {"    "}<span className="text-green-300">'Frontend Architecture'</span>,{"\n"}
+                  {"    "}<span className="text-green-300">'Performance Optimization'</span>,{"\n"}
+                  {"    "}<span className="text-green-300">'SSO (Azure AD, Okta, ForgeRock)'</span>,{"\n"}
+                  {"    "}<span className="text-green-300">'API Integration'</span>,{"\n"}
+                  {"  "}{"]"}, {"\n"}
+
                   {"  "}
-                  <span className="text-blue-400">{"]"}</span>,{"\n"}
+                  <span className="text-yellow-300">backend</span>: {"["}{"\n"}
+                  {"    "}<span className="text-green-300">'Node.js'</span>,{"\n"}
+                  {"    "}<span className="text-green-300">'Express.js'</span>,{"\n"}
+                  {"    "}<span className="text-green-300">'MongoDB'</span>,{"\n"}
+                  {"  "}{"]"}, {"\n"}
+
                   {"  "}
-                  <span className="text-yellow-300">contact</span>
-                  <span className="text-blue-400">:</span>{" "}
+                  <span className="text-yellow-300">focus</span>:{" "}
+                  <span className="text-green-300">'Scalable UI, Performance, User Experience'</span>,{"\n"}
+
+                  {"  "}
+                  <span className="text-yellow-300">contact</span>:{" "}
                   <span className="text-green-300">'amnishad0512@gmail.com'</span>{"\n"}
-                  <span className="text-blue-400">{"}"}</span>;{"\n\n"}
-                  <span className="text-blue-400">export default</span>{" "}
-                  <span className="text-green-400">developer</span>;
+
+                  <span className="text-blue-400">{"}"}</span>;
                 </code>
               </pre>
             </div>

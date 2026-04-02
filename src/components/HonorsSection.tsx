@@ -6,15 +6,18 @@ interface Award {
   organization: string;
   date: string;
   description: string;
+  link:string
 }
 
 const awards: Award[] = [
   {
-    title: "Shining Star Award",
-    organization: "Inspironlabs Software Systems Pvt Ltd",
-    date: "2023-2024",
-    description: "Awarded for being a shining star of the Year. Recognized the best in performance and contribution to the team."
-  },
+  title: "Shining Star Award",
+  organization: "InspironLabs Software Systems Pvt Ltd",
+  date: "2023–2024",
+  description:
+    "Recognized for outstanding performance, consistent delivery, and significant contribution to key projects and team success.",
+  link: "https://drive.google.com/file/d/1K0iCgwUm1c65gCFb9GHRJgxKTzYTuU_R/view?usp=sharing"
+}
 ];
 
 const HonorsSection = () => {
@@ -30,8 +33,9 @@ const HonorsSection = () => {
           {awards.map((award, index) => (
             <div 
               key={index} 
-              className="bg-card rounded-lg p-6 shadow-sm animate-fade-up"
+              className="cursor-pointer bg-card rounded-lg p-6 shadow-sm animate-fade-up"
               style={{ animationDelay: `${index * 0.2}s` }}
+              onClick={() => window.open(award.link, "_blank")}
             >
               <div className="flex items-start gap-4">
                 <div className="p-2 bg-primary/10 rounded-lg">

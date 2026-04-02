@@ -37,18 +37,18 @@ const ContactSection = () => {
 
     try {
       await emailjs.send(
-        'Portfolio', // Service ID
-        'template_q6dhyig', // Template ID
+        'Portfolio',
+        'portfolio',
         {
-          to_email: 'amnishad0512@gmail.com', // Your email address
+          to_email: 'amnishad0512@gmail.com',
           to_name: 'Manoj Kumar Nishad',
           from_name: formData.name,
           from_email: formData.email,
-          subject: `Portfolio Contact: Message from ${formData.name}`,
+          subject: `Portfolio Contact`,
           message: formData.message,
           reply_to: formData.email,
         },
-        'eb4cDuVLacWwCFpg3' // Public Key
+        'zN_bPxb36YMXt0Hw9'
       );
 
       toast({
@@ -82,8 +82,7 @@ const ContactSection = () => {
         </h2>
         <div className="h-1 w-24 bg-primary mb-8"></div>
         <p className="text-lg text-muted-foreground max-w-2xl mb-12">
-          I'm currently looking for new opportunities. Whether you have a question or just want to say hi, 
-          I'll try my best to get back to you!
+      Currently open to new opportunities across frontend, full-stack, and React Native development. Feel free to reach out for roles, collaborations, or project discussions — I’ll respond promptly.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -158,7 +157,7 @@ const ContactSection = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <MapPin className="w-5 h-5 text-primary mr-3" />
-                  <span>Champa, Chhattisgarh, India</span>
+                  <span>Gurugram, Haryana, India</span>
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-5 h-5 text-primary mr-3" />
