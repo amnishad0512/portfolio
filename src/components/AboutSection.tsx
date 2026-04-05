@@ -43,7 +43,7 @@ const AboutSection = () => {
                   </div>
                   <div className="border-l-2 border-primary pl-4 pb-4 flex-1">
                     <p className="text-primary font-medium">2025 - 2026</p>
-                    <h4 className="text-lg font-semibold">Senior Frontend Engineer</h4>
+                    <h4 className="text-lg font-semibold">Senior Frontend Developer</h4>
                     <p className="text-muted-foreground">HT Media Group, Gurugram</p>
                   </div>
                 </li>
