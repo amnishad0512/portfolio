@@ -74,7 +74,7 @@ const projects = [
       'Razorpay'
     ],
     liveLink: 'https://vendora.manojnishad.in/',
-    githubLink: 'https://github.com/amnishad0512/vendora',
+    // githubLink: 'https://github.com/amnishad0512/vendora',
     category: 'fullstack',
     image:"./vendora.png"
   },
