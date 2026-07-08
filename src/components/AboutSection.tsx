@@ -16,7 +16,7 @@ const AboutSection = () => {
 
             <div className="space-y-4 text-lg">
               <p>
-                I am a Senior Frontend Developer with 3.8+ years of experience building scalable, high-performance web applications using React.js, Next.js, and TypeScript.
+                I am a Senior Frontend Developer with 3.9 years of experience building scalable, high-performance web applications using React.js, Next.js, and TypeScript.
               </p>
 
               <p>
@@ -141,7 +141,7 @@ const AboutSection = () => {
 
                   {"  "}
                   <span className="text-yellow-300">experience</span>:{" "}
-                  <span className="text-green-300">'3.8+ Years'</span>,{"\n"}
+                  <span className="text-green-300">'3.9 Years'</span>,{"\n"}
 
                   {"  "}
                   <span className="text-yellow-300">coreSkills</span>: {"["}{"\n"}
