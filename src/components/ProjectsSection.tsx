@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 
 const projects = [
   {
-    id: 0,
+    id: 1,
     title: 'Shine Candidate Platform',
     description:
       'Improved user journeys and conversion by redesigning login, registration, profile, and job search on a large-scale job platform.',
@@ -24,7 +24,7 @@ const projects = [
   },
 
   {
-    id: 1,
+    id: 2,
     title: 'SSO Integration Platform (DYP & DYD)',
     description:
       'Implemented multi-IDP SSO using OpenID Connect enabling secure access across applications and third-party tools.',
@@ -44,7 +44,7 @@ const projects = [
   },
 
   {
-    id: 2,
+    id: 3,
     title: 'SSO Controller Platform (HTG Auth Client)',
     description:
       'Built centralized authentication system to configure multiple IDPs and manage dynamic authentication flows.',
@@ -58,25 +58,6 @@ const projects = [
     liveLink: '',
     category: 'frontend',
     image:"/dyp.png"
-  },
-
-  {
-    id: 3,
-    title: 'Vendora – E-commerce Platform',
-    description:
-      'Developed full-stack e-commerce platform with checkout, payments, and scalable order management.',
-    tags: [
-      'React.js',
-      'Tailwind CSS',
-      'Node.js',
-      'Express.js',
-      'MongoDB',
-      'Razorpay'
-    ],
-    liveLink: 'https://vendora.manojnishad.in/',
-    // githubLink: 'https://github.com/amnishad0512/vendora',
-    category: 'fullstack',
-    image:"./vendora.png"
   },
 
   {
@@ -99,11 +80,30 @@ const projects = [
 
   {
     id: 5,
+    title: 'Vendora – E-commerce Platform',
+    description:
+      'Developed full-stack e-commerce platform with checkout, payments, and scalable order management.',
+    tags: [
+      'React.js',
+      'Tailwind CSS',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'Razorpay'
+    ],
+    liveLink: 'https://vendora.manojnishad.in/',
+    // githubLink: 'https://github.com/amnishad0512/vendora',
+    category: 'fullstack',
+    image:"./vendora.png"
+  },
+
+  {
+    id: 6,
     title: 'Portfolio Website',
     description:
       'Designed responsive portfolio with modern UI, smooth navigation, and performance-focused architecture.',
     tags: [
-      'React.js',
+      'HTML',
       'TypeScript',
       'Tailwind CSS',
     ],
@@ -140,7 +140,7 @@ const ProjectsSection = () => {
         </p>
 
         {/* Filter buttons */}
-        <div className="flex flex-wrap gap-3 mb-12">
+        {/* <div className="flex flex-wrap gap-3 mb-12">
           {filters.map((filter) => (
             <Button
               key={filter.value}
@@ -151,7 +151,7 @@ const ProjectsSection = () => {
               {filter.name}
             </Button>
           ))}
-        </div>
+        </div> */}
 
         {/* Projects grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
