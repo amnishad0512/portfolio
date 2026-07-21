@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { useState } from 'react';
-import { 
-  Mail, 
-  MapPin, 
-  Phone, 
-  Github, 
-  Linkedin, 
-  Twitter,
+import {
+  Mail,
+  MapPin,
+  Phone,
+  MessageCircle,
+  Linkedin,
+  Github,
   Send,
   Loader2
 } from 'lucide-react';
@@ -82,7 +82,7 @@ const ContactSection = () => {
         </h2>
         <div className="h-1 w-24 bg-primary mb-8"></div>
         <p className="text-lg text-muted-foreground max-w-2xl mb-12">
-      Currently open to new opportunities across frontend, full-stack, and React Native development. Feel free to reach out for roles, collaborations, or project discussions — I’ll respond promptly.
+          Open to new opportunities in frontend and full-stack development. Feel free to reach out for roles, collaborations, or project discussions — I’ll be happy to connect.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -131,8 +131,8 @@ const ContactSection = () => {
                   ></textarea>
                 </div>
               </div>
-              <Button 
-                type="submit" 
+              <Button
+                type="submit"
                 className="flex items-center gap-2"
                 disabled={isLoading}
               >
@@ -164,6 +164,17 @@ const ContactSection = () => {
                   <a href="mailto:amnishad0512@gmail.com" className="hover:text-primary">amnishad0512@gmail.com</a>
                 </div>
                 <div className="flex items-center">
+                  <MessageCircle className="w-5 h-5 text-primary mr-3" />
+                  <a
+                    href="https://wa.me/918435925392"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-primary"
+                  >
+                    +91-8435925392
+                  </a>
+                </div>
+                <div className="flex items-center">
                   <Phone className="w-5 h-5 text-primary mr-3" />
                   <a href="tel:+918435925392" className="hover:text-primary">+91-8435925392</a>
                 </div>
@@ -173,17 +184,17 @@ const ContactSection = () => {
             <div className="bg-card rounded-lg border border-border p-6">
               <h3 className="text-xl font-bold mb-4">Connect with me</h3>
               <div className="flex space-x-4">
-                <a 
-                  href="https://github.com/amnishad0512" 
-                  target="_blank" 
+                <a
+                  href="https://github.com/amnishad0512"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 bg-secondary/50 rounded-full hover:bg-primary/20 transition-colors"
                 >
                   <Github className="w-5 h-5" />
                 </a>
-                <a 
-                  href="https://www.linkedin.com/in/amnishad0512/" 
-                  target="_blank" 
+                <a
+                  href="https://www.linkedin.com/in/amnishad0512/"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 bg-secondary/50 rounded-full hover:bg-primary/20 transition-colors"
                 >

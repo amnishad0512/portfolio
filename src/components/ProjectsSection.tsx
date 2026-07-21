@@ -14,9 +14,10 @@ const projects = [
       'React.js',
       'Next.js',
       'TypeScript',
-      'React Native',
+      'Tailwind CSS',
       'Redux Toolkit',
-      'REST API'
+      'REST API',
+      'Storybook',
     ],
     liveLink: 'https://www.shine.com',
     category: 'frontend',
@@ -54,6 +55,7 @@ const projects = [
       'Context API',
       'React Hook Form',
       'Yup',
+      'Tailwind CSS',
     ],
     liveLink: '',
     category: 'frontend',
@@ -69,6 +71,7 @@ const projects = [
       'Next.js',
       'TypeScript',
       'Redux Toolkit',
+      'Tailwind CSS',
       'Mapbox',
       'Node.js',
       'MongoDB'
@@ -89,6 +92,8 @@ const projects = [
       'Node.js',
       'Express.js',
       'MongoDB',
+      'Puppeteer',
+      'Resend',
       'Razorpay'
     ],
     liveLink: 'https://vendora.manojnishad.in/',
@@ -103,9 +108,11 @@ const projects = [
     description:
       'Designed responsive portfolio with modern UI, smooth navigation, and performance-focused architecture.',
     tags: [
-      'HTML',
+
+      'React.js',
       'TypeScript',
       'Tailwind CSS',
+      'Email.js'
     ],
     liveLink: 'https://manojnishad.in',
     githubLink: 'https://github.com/amnishad0512/portfolio',
@@ -136,7 +143,7 @@ const ProjectsSection = () => {
         </h2>
         <div className="h-1 w-24 bg-primary mb-8"></div>
         <p className="text-lg text-muted-foreground max-w-2xl mb-12">
-          A selection of projects demonstrating experience in building scalable, high-performance applications, including production systems, authentication platforms, and full-stack solutions.
+      A selection of projects showcasing scalable, high-performance applications with experience across frontend development, backend integration, authentication, APIs, and full-stack solutions.
         </p>
 
         {/* Filter buttons */}

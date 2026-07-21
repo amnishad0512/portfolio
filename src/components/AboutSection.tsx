@@ -15,16 +15,17 @@ const AboutSection = () => {
             <div className="h-1 w-24 bg-primary mb-8"></div>
 
             <div className="space-y-4 text-lg">
+              
               <p>
-                I am a Senior Frontend Developer with 3.9 years of experience building scalable, high-performance web applications using React.js, Next.js, and TypeScript.
+             I have 4 years of experience building scalable, high-performance web applications using React.js, Next.js, TypeScript, Node.js, Express.js, and MongoDB.
               </p>
 
               <p>
-                Currently working on a large-scale job platform, focusing on improving core user journeys such as login, registration, profile, and job search, while optimizing performance and overall user experience.
+             I have worked on large-scale platforms, improving core user journeys such as login, registration, profile, and job search, with a strong focus on performance, user experience, and scalable frontend architecture.
               </p>
 
               <p>
-                Strong in frontend architecture, API integration, and performance optimization, with experience in implementing SSO systems (Azure AD, Okta, ForgeRock). Also have hands-on experience with React Native and working knowledge of Node.js, Express, and MongoDB for full-stack development.
+              My expertise includes frontend architecture, API integration, performance optimization, authentication, and SSO solutions such as Azure AD, Okta, and ForgeRock. I also have hands-on experience with backend development using Node.js, Express.js, MongoDB, and REST APIs, allowing me to contribute to both frontend and backend development.
               </p>
             </div>
 
@@ -115,69 +116,67 @@ const AboutSection = () => {
             </div>
           </div>
 
-          <div className="w-full md:w-1/2">
-            <div className="bg-code rounded-lg p-6 h-full">
-              <div className="flex items-center mb-4">
-                <div className="w-3 h-3 rounded-full bg-destructive mr-2"></div>
-                <div className="w-3 h-3 rounded-full bg-orange-400 mr-2"></div>
-                <div className="w-3 h-3 rounded-full bg-green-400 mr-2"></div>
-                <span className="text-muted-foreground text-sm">about.js</span>
-              </div>
+         <div className="w-full md:w-1/2">
+  <div className="bg-code rounded-lg p-6 h-full">
+    <div className="flex items-center mb-4">
+      <div className="w-3 h-3 rounded-full bg-destructive mr-2"></div>
+      <div className="w-3 h-3 rounded-full bg-orange-400 mr-2"></div>
+      <div className="w-3 h-3 rounded-full bg-green-400 mr-2"></div>
+      <span className="text-muted-foreground text-sm">about.js</span>
+    </div>
 
-              <pre className="font-mono text-sm">
-                <code>
-                  <span className="text-blue-400">const</span>{" "}
-                  <span className="text-green-400">developer</span>{" "}
-                  <span className="text-blue-400">=</span>{" "}
-                  <span className="text-blue-400">{"{"}</span>{"\n"}
+    <pre className="font-mono text-sm">
+      <code>
+        <span className="text-blue-400">const</span>{" "}
+        <span className="text-green-400">developer</span>{" "}
+        <span className="text-blue-400">=</span>{" "}
+        <span className="text-blue-400">{"{"}</span>{"\n"}
 
-                  {"  "}
-                  <span className="text-yellow-300">name</span>:{" "}
-                  <span className="text-green-300">'Manoj Kumar Nishad'</span>,{"\n"}
+        {"  "}
+        <span className="text-yellow-300">name</span>:{" "}
+        <span className="text-green-300">'Manoj Kumar Nishad'</span>,{"\n"}
 
-                  {"  "}
-                  <span className="text-yellow-300">title</span>:{" "}
-                  <span className="text-green-300">'Senior Frontend Developer'</span>,{"\n"}
+        {"  "}
+        <span className="text-yellow-300">experience</span>:{" "}
+        <span className="text-green-300">'4 Years'</span>,{"\n"}
 
-                  {"  "}
-                  <span className="text-yellow-300">experience</span>:{" "}
-                  <span className="text-green-300">'3.9 Years'</span>,{"\n"}
+        {"  "}
+        <span className="text-yellow-300">primarySkills</span>: {"["}{"\n"}
+        {"    "}<span className="text-green-300">'React.js'</span>,{"\n"}
+        {"    "}<span className="text-green-300">'Next.js'</span>,{"\n"}
+        {"    "}<span className="text-green-300">'TypeScript'</span>,{"\n"}
+        {"    "}<span className="text-green-300">'JavaScript'</span>,{"\n"}
+        {"  "}{"]"}, {"\n"}
 
-                  {"  "}
-                  <span className="text-yellow-300">coreSkills</span>: {"["}{"\n"}
-                  {"    "}<span className="text-green-300">'React.js'</span>,{"\n"}
-                  {"    "}<span className="text-green-300">'Next.js'</span>,{"\n"}
-                  {"    "}<span className="text-green-300">'TypeScript'</span>,{"\n"}
-                  {"    "}<span className="text-green-300">'React Native'</span>,{"\n"}
-                  {"  "}{"]"}, {"\n"}
+        {"  "}
+        <span className="text-yellow-300">specialization</span>: {"["}{"\n"}
+        {"    "}<span className="text-green-300">'Frontend Architecture'</span>,{"\n"}
+        {"    "}<span className="text-green-300">'Performance Optimization'</span>,{"\n"}
+        {"    "}<span className="text-green-300">'API Integration'</span>,{"\n"}
+        {"    "}<span className="text-green-300">'Authentication & SSO'</span>,{"\n"}
+        {"  "}{"]"}, {"\n"}
 
-                  {"  "}
-                  <span className="text-yellow-300">specialization</span>: {"["}{"\n"}
-                  {"    "}<span className="text-green-300">'Frontend Architecture'</span>,{"\n"}
-                  {"    "}<span className="text-green-300">'Performance Optimization'</span>,{"\n"}
-                  {"    "}<span className="text-green-300">'SSO (Azure AD, Okta, ForgeRock)'</span>,{"\n"}
-                  {"    "}<span className="text-green-300">'API Integration'</span>,{"\n"}
-                  {"  "}{"]"}, {"\n"}
+        {"  "}
+        <span className="text-yellow-300">backend</span>: {"["}{"\n"}
+        {"    "}<span className="text-green-300">'Node.js'</span>,{"\n"}
+        {"    "}<span className="text-green-300">'Express.js'</span>,{"\n"}
+        {"    "}<span className="text-green-300">'MongoDB'</span>,{"\n"}
+        {"    "}<span className="text-green-300">'REST APIs'</span>,{"\n"}
+        {"  "}{"]"}, {"\n"}
 
-                  {"  "}
-                  <span className="text-yellow-300">backend</span>: {"["}{"\n"}
-                  {"    "}<span className="text-green-300">'Node.js'</span>,{"\n"}
-                  {"    "}<span className="text-green-300">'Express.js'</span>,{"\n"}
-                  {"    "}<span className="text-green-300">'MongoDB'</span>,{"\n"}
-                  {"  "}{"]"}, {"\n"}
+        {"  "}
+        <span className="text-yellow-300">focus</span>:{" "}
+        <span className="text-green-300">'Scalable Applications, Performance, User Experience'</span>,{"\n"}
 
-                  {"  "}
-                  <span className="text-yellow-300">focus</span>:{" "}
-                  <span className="text-green-300 break-words">'Scalable UI, Performance,<br/> User Experience'</span>,{"\n"}
-                  {"  "}
-                  <span className="text-yellow-300">contact</span>:{" "}
-                  <span className="text-green-300">'amnishad0512@gmail.com'</span>{"\n"}
+        {"  "}
+        <span className="text-yellow-300">contact</span>:{" "}
+        <span className="text-green-300">'amnishad0512@gmail.com'</span>{"\n"}
 
-                  <span className="text-blue-400">{"}"}</span>;
-                </code>
-              </pre>
-            </div>
-          </div>
+        <span className="text-blue-400">{"}"}</span>;
+      </code>
+    </pre>
+  </div>
+</div>
         </div>
       </div>
     </section>

@@ -9,13 +9,13 @@ const HeroSection = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="max-w-2xl">
             <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-up" style={{ animationDelay: '0.2s' }}>
-              Hi, I'm <span className="gradient-text">Manoj Kumar Nishad</span>
+              Hi, I'm <span className="gradient-text">Manoj Kumar   Nishad</span>
             </h1>
             <h3 className="text-xl md:text-2xl font-bold mb-4 animate-fade-up" style={{ animationDelay: '0.2s' }}>
-              React.js | Next.js | TypeScript | Node.js | Express.js | MongoDB | React Native
+              React.js | Next.js | TypeScript | JavaScript | Node.js | Express.js | MongoDB
             </h3>
             <p className="text-xl text-muted-foreground mb-8 animate-fade-up" style={{ animationDelay: '0.6s' }}>
-           Building scalable, high-performance web applications with focus on user experience, performance, and frontend architecture.
+        4 years of experience building scalable, high-performance web applications, with strong expertise in frontend development and hands-on experience in backend development, REST APIs, and full-stack integration.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: '0.8s' }}>
               <Button size="lg" className="group" asChild>

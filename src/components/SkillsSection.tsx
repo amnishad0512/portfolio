@@ -85,7 +85,7 @@ const SkillsSection = () => {
         </h2>
         <div className="h-1 w-24 bg-primary mb-8"></div>
         <p className="text-lg text-muted-foreground max-w-2xl mb-12">
-          Frontend-focused engineer with strong expertise in building scalable, high-performance UI and hands-on experience across APIs, authentication systems, and full-stack collaboration.
+          Frontend-focused engineer with strong expertise in building scalable, high-performance UIs, along with hands-on experience in API integration, authentication systems, backend development, and full-stack application development.
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
