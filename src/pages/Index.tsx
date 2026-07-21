@@ -11,8 +11,6 @@ import RecommendationsSection from '@/components/RecommendationsSection';
 
 const Index = () => {
   useEffect(() => {
-    // Update page title
-    document.title = 'Manoj kumar Nishad - Frontend Developer';
 
     // Add intersection observer for section animations
     const observer = new IntersectionObserver(
