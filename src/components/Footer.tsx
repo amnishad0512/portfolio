@@ -13,7 +13,7 @@ const Footer = () => {
               manojnishad<span className="text-primary">.in</span>
             </a>
             <p className="text-muted-foreground mt-2">
-             Building scalable web and mobile applications with focus on performance, usability, and clean architecture.
+              Building scalable applications with a focus on performance, usability, clean architecture, and seamless frontend-backend integration.
             </p>
           </div>
           
