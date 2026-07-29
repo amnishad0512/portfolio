@@ -164,9 +164,9 @@ const AboutSection = () => {
         {"    "}<span className="text-green-300">'REST APIs'</span>,{"\n"}
         {"  "}{"]"}, {"\n"}
 
-        {"  "}
+        {/* {"  "}
         <span className="text-yellow-300">focus</span>:{" "}
-        <span className="text-green-300">'Scalable Applications, Performance, User Experience'</span>,{"\n"}
+        <span className="text-green-300">'Scalable Applications, Performance, User Experience'</span>,{"\n"} */}
 
         {"  "}
         <span className="text-yellow-300">contact</span>:{" "}
