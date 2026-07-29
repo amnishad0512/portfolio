@@ -157,7 +157,7 @@ const ContactSection = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <MapPin className="w-5 h-5 text-primary mr-3" />
-                  <span>Gurugram, Haryana, India</span>
+                  <span>Bengaluru, Karnataka, India</span>
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-5 h-5 text-primary mr-3" />
